@@ -4,7 +4,8 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo 'copy /dist /usr/share/nginx/html/'
+                sh 'copy /dist /usr/share/nginx/html/'
+                echo 'hhhhhh'
             }
         }
     }
